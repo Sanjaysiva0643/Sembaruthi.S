@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    <h1>Admin Dashboard</h1>
+    <p>Edit your public portfolio details below.</p>
+
+    <form id="portfolioForm">
+      <label>Name</label>
+      <input id="name" required>
+
+      <label>Role</label>
+      <input id="role" required>
+
+      <label>About</label>
+      <textarea id="about" required></textarea>
+
+      <label>Skills (comma separated)</label>
+      <textarea id="skills"></textarea>
+
+      <label>Projects (comma separated)</label>
+      <textarea id="projects"></textarea>
+
+      <label>Experience</label>
+      <textarea id="experience"></textarea>
+
+      <label>Email</label>
+      <input id="contactEmail" type="email">
+
+      <button type="submit">Save Changes</button>
+    </form>
+
+    <p id="status"></p>
+    <button id="logoutButton">Logout</button>
+    <a href="index.html">View Website</a>
+  </section>
+  <script type="module" src="admin.js"></script>
+</body>
+</html>
